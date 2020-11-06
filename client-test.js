@@ -1,3 +1,5 @@
+
+// This html content is the same as webview.html
 const webContent =
     `<html>
 
@@ -18,8 +20,11 @@ webview.setAttribute('nodeintegrationinsubframes', 'true');
 webview.setAttribute('enableremotemodule', 'true');
 webview.setAttribute('disablewebsecurity', 'true');
 webview.setAttribute('webpreferences', 'allowRunningInsecureContent');
+
+// If we load the webview content this way, the webview will work with any electron version
 //webview.setAttribute('src', 'file://C:/Users/feren/Projects/webview-sandbox/webview.html');
 
-webview.src = 'data:text/html;base64,' + window.btoa(webContent);
+// If we load the webview content this way, the webview wont work with electron 9.* or 10.*.
+webview.src = 'data:text/html;base64,' + window.btoa(webContent); 
 
 document.getElementById('webViewPlace').appendChild(webview);

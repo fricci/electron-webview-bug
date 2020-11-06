@@ -5,12 +5,13 @@
 </head>
 
 <body>
-    <p>Webview content with src</p>
+    <p>Webview content loaded from external html file</p>
+    <!-- This webview always works with any electron version -->
     <webview nodeintegration="true" disablewebsecurity="true" webpreferences="allowRunningInsecureContent"
         src="file://C:/Users/feren/Projects/webview-sandbox/webview.html">
 
     </webview>
-    <p>Webview with data</p>
+    <p>Webview content composed by script</p>
     <div id='webViewPlace'></div>
     <script src="file://C:/Users/feren/Projects/webview-sandbox/client-test.js"></script>
 </body>

@@ -1,0 +1,1 @@
+document.getElementById('result').innerHTML = 'JS working!';

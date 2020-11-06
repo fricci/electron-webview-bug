@@ -1,12 +1,17 @@
 <html>
 
 <head>
+    <script>
+        console.log('loading script');
+        var script = document.createElement('script');
+        script.src = `file://C:/Users/feren/Projects/webview-sandbox/client-test-in-webview.js`;
 
+                document.head.appendChild(script);
+            </script>
 </head>
 
 <body>
     <div id="result"></div>
-    <script src="file://C:/Users/feren/Projects/webview-sandbox/client-test-in-webview.js"></script>
 </body>
 
 </html>

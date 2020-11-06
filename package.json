@@ -9,6 +9,6 @@
   "author": "Ferenc Czina",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^10.1.5"
+    "electron": "9.3.3"
   }
 }
